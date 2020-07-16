@@ -1,0 +1,41 @@
+https://slides.com/bgando/f2f-final-day-1
+
+LINK TO THE SLIDES ABOVE.Check
+
+Primitive values are int, float, string, boolean , null ,undefined
+Non Primitive values are Arrays ,function, Promise,object Primitive values are passed by value 
+Non Primitive values are passed by reference
+
+PASS BY VALUE:
+The variable gets a seperate space in memory
+
+Eg: 
+
+var x = 5
+var y = x //The value of y and x is 5
+
+x = 10
+
+console.log(x) //The value of x is 10
+console.log(y) //The value of y is 5
+
+So y is allocated a seperate memory space 
+
+PASS BY REFERENCE:
+In pass by reference the variables share a memory space i.e The variables point to the same memory space
+
+//OBJECTS USAGE OF DOTS
+
+var person = []
+
+person.name = "Mrs.White"
+
+var who = person.name;
+
+person[0] = " I was not in the billiards room " 
+
+person.0 //Throw an error Because it is a syntax error. It is not a string
+
+We can use the brackets [] when we can use the DOTS
+
+We can use the dot (.) when the value is string literal / valid variable name

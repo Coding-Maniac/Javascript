@@ -1,0 +1,60 @@
+https://slides.com/bgando/f2f-final-day-1
+
+//Check the end of the object slides for questions which help in recap
+
+What is an object?
+
+QUESTIONS
+1.What is the difference between dot and bracket notation?
+2.How do you add a property with a key that contains special characters?
+3.How do you add a property whose key and value are stored in different variables?
+4.How do we loop through objects to access the values? --not answered
+5.When can you only use dot notation and not bracket?                                
+6.When can you only use brackets and not dot?
+7.How do you add a property with a key that is stored in a variable?
+8.How do you access an object that is inside another object?
+9.How do you create an object that is nested inside another object?
+//ES6 Destructuring
+10.How do you destructure variable declaration and how does it work?
+11.How do you destructure object declaration and how does it work and does order of declaration matter?
+
+ANSWERS:
+1.The dot notation is used to save characters and can be used at only specific places such as strings whereas the brackets can be used for anything
+var person = {}
+person.name = "Sanjay"
+person.0 //This throws us an syntax error
+person[0] = "Kapilesh" //This is correct
+2.Use Bracket Notations
+3.  var key = "Well I am a key";
+    var value = "I am a value";
+    var person = {};
+    person[key] = value
+4. loop? I am not sure till now
+5. We need to use dot notation when we need to key passed to be parsed as a string
+Eg: 
+    var person = {};
+    person.firstName= "Sanjay"; //In this firstName is converted to a string
+    person[secondName] = "Kapilesh"; //In this secondName is treated as a variable and it results in an error as secondName is undefined
+6. We need to use bracket in case of using weird expressions and numbers
+Eg: 
+    person.0 = "Meh" //This will throw an error;
+    person[0] = "I work"
+    person["^&"] = "The weird expression is in quotes" //The variable is ^& which is not common and must be used with strings and inside a bracket
+7. Use the bracket notation. Check answer number 3 for example
+8. Check clueGame.js for more information
+9. Check clueGame.js for more information
+//ES6 Destructuring
+
+10. Eg: 
+    const [first, second] = [true, false]
+    let[first, second] = [true, false]
+    This works based on the order.
+    The first element on the left array is matched to the first element on the right array
+11 Eg:
+    const {first, second} = {first:0, second:1}
+    let{a, b} = {b:0, a:1}
+
+    Destructuring of object doesnot depend on order
+    Destructuring of object depends on the same variable name
+    In the above example a is 1 and b is 0, first is 0 and second is 1.
+

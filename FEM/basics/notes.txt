@@ -1,0 +1,63 @@
+SLIDES
+https://static.frontendmasters.com/resources/2019-05-08-getting-into-javascript/getting-into-javascript.pdf
+
+Primitive Types
+->undefined
+->String
+->Number
+->Boolean
+->Object
+->Symbol (Recently introduced)
+->null
+->function (subtype of object type)
+
+"""In JavaScript variable don't have types values do"""
+
+var v;
+typeof v;   //Undefined
+
+v = "1";
+typeof v; //String
+
+v = 2;
+typeof v; //Number
+
+v = true
+typeof v; //Boolean
+
+v = {};
+typeof v; //object
+
+v = Symbol();
+
+typeof v; //symbol
+
+typeof neverDeclared //Undefined ("This is a tricky one in JS if a variable is declared or not declared the type is undefined)
+
+v = null;
+typeof v; //Object (???)
+
+v = function(){};
+
+typeof v; // function ("This is a subtype of Object")
+
+v = [1,2,3];
+typeof v; //object
+
+
+//THE USE OF new
+ 
+USE new:
+Object()
+Array()
+Function()
+Date()
+RegExp()
+Error()
+
+Don't use new:
+String()
+Number()
+Boolean()
+
+A functions this references the execution context for that call, determined entirely by how the function was called
