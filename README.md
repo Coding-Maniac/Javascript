@@ -17,7 +17,7 @@
 ### [Basics](https://github.com/Coding-Maniac/Javascript/tree/master/FEM/basics)
 
 **The folder consists of a small intro to all chapters in JS**
-### [Intro] (https://github.com/Coding-Maniac/Javascript/tree/master/FEM/intro)
+### [Intro](https://github.com/Coding-Maniac/Javascript/tree/master/FEM/intro)
 **The intro folder consists of functions and the methods used in Javascript and good knowledge about scope**
 
 
